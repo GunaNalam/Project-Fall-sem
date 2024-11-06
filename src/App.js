@@ -13,7 +13,7 @@ function AudioRecorder1() {
       document.body.appendChild(audio);
       b=1;
     }
-    else document.body.getElementsByTagName('audio').src=URL.createObjectURL(blob);
+    else document.body.getElementsByTagName('audio')[0].src=URL.createObjectURL(blob);
   }
 
   return (
