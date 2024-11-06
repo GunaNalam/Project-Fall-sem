@@ -12,6 +12,9 @@ function AudioRecorder1() {
       audio.controls = true;
       document.body.appendChild(audio);
       b=1;
+      const div = document.createElement("div");
+      div.innerHTML=`${url}`
+      document.body.appendChild(div);
     }
     else document.body.getElementsByTagName('audio')
   }
@@ -25,7 +28,7 @@ function AudioRecorder1() {
         noiseSuppression: true,
         echoCancellation: true,
       }} 
-      downloadOnSavePress={true}
+      downloadOnSavePress={false}
       downloadFileExtension="webm"/>
     </>
   );
