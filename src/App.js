@@ -28,7 +28,7 @@ function AudioRecorder1() {
           noiseSuppression: true,
           echoCancellation: true,
         }} 
-        downloadOnSavePress={false}
+        downloadOnSavePress={true}
         downloadFileExtension="webm"/>
       </div>
     </div>
