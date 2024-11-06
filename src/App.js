@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { AudioRecorder } from 'react-audio-voice-recorder';
-
+import './App.css'
 function AudioRecorder1() {
   let b=0;
   const addAudioElement = (blob) => {
@@ -18,15 +18,20 @@ function AudioRecorder1() {
 
   return (
     <>
-      <div>Sound Recorder for Emotion Detection</div>
-      <AudioRecorder 
-      onRecordingComplete={addAudioElement}
-      audioTrackConstraints={{
-        noiseSuppression: true,
-        echoCancellation: true,
-      }} 
-      downloadOnSavePress={false}
-      downloadFileExtension="webm"/>
+    <div>
+      <div className="Main">Record Your Voice</div>
+      <div className="Sub">We will guess your mood!!</div>
+      <div className="Mike">
+        <AudioRecorder
+        onRecordingComplete={addAudioElement}
+        audioTrackConstraints={{
+          noiseSuppression: true,
+          echoCancellation: true,
+        }} 
+        downloadOnSavePress={false}
+        downloadFileExtension="webm"/>
+      </div>
+    </div>
     </>
   );
 }
