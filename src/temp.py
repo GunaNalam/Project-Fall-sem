@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup
 
 
 # Making a GET request
-r = requests.get('https://project-fall-sem.vercel.app/')
+r = requests.get('https://91e0-36-255-16-53.ngrok-free.app/')
 
-print(r)
 # check status code for response received
 # success code - 200
 
